@@ -1,0 +1,86 @@
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+body{
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Press Start 2P';
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page{
+  width: 90%;
+  background-color: black;
+  padding: 20px;
+  box-shadow: 0 5px 20px #67509E;
+  border: 4px solid white;
+}
+
+.link{
+  color: #4A96E1;
+}
+
+.titleBox{
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #0a0015;
+}
+
+.titleHeading{
+  width: 200px;
+  height: 150px;
+}
+
+.naviBoard {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* need purple color format for the h1 and paragrpah in titlebox*/
+
+.mainBox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.left{
+  flex: 1;
+}
+.right{
+  flex: 1;
+}
+
+.sectionBox{
+  border: 2px solid white;
+  backlground-color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #796794;
+}
+
+.sHeader{
+  color: white;
+
+}
+
+/* section box h2 and paragraph and the list in it */
+
+
+#crossedRed{
+  color: red;
+  text-decoration: line-through 2px red;
+
+}
