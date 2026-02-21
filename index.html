@@ -1,84 +1,80 @@
 <!-- Ethan Sinha -->
-<!-- U2 L11 -->
-<!-- Restaurant -->
-
+<!-- U4 L1 -->
+<!-- Cipher Website -->
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title> MTT Resort Homepage </title>
+
+    <title>Cipherox: Encoder</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
   </head>
 
   <body>
     <div class="page">
-      <div class="naviBoard">
-        <p > HOMEPAGE | <a class="link" href="/pages/menupage/menupage.html"> ORDER HERE</a> | <a class="link" href="/pages/cart/cart.html"> CART</a> | <a class="link" href="/pages/about/about.html">ABOUT US</a> | <a class="link" href="/pages/SDP/sdp.html"> SDP</a></p>  <!-- CSS This -->
-      </div>
-      
-      <div class="titleBox">
-        <img id="titleHeading" src="/resources/index/mtt.png" alt="noImage_mtt"> <!-- CSS This -->
-        <p id="titlePara">"insert funny joke"</p> <!-- CSS This -->
-      </div>
 
-      <div class="mainBox">
-        <div class="left">
-          <div class="sectionBox">
-            <h2 class="sHeader"> WELCOME ! ! ! </h2> <!-- CSS This -->
-            <p id="sPara1"> <!-- CSS This -->
-              YOU ARE HERE
-              <br>
-              <br>
-              UNDERTALE - Underground Ruins, Hotlands Region, MTT Resort
-            </p>
-          </div>
-          
-            <div class="sectionBox">
-              <h2 class="sHeader"> It's a beautiful day outside. </h2> <!-- CSS This -->
-            <ul id="sList2"> <!-- CSS This -->
-              <li> birds are singing, </li>
-              <br>
-              <li> flowers are blooming . . . </li>
-              <br>
-              <li> on days like these, kids like you . . . </li>
-              <br>
-              <li id="crossedRed"> should be burning in hell </li>
-              <br>
-              <li> should be filling your stomach at the MTT Resort! </li>
-            </ul>
+      <div id="holder1">
+        <div id="imgholder">
+          <img id="philo" src="resources/thephilo.png" alt="The Philosopher">
+        </div>
+
+        <div id="holder2">
+          Welcome <br><br>
+          to<br><br>
+          <element style="color: blueviolet; text-decoration: underline">
+            CIPHEROX
+          </element>
+        </div>
+
+        <div id="inlineSquares">
+          <div id="bunch">
+            <div class="squares">
+              <a class="links" href="pages/SDP/U5_Lab1_SDP.html">SDP</a>
             </div>
-            
-          
-          
-        </div>
-
-        <div class="right">
-          <div class="sectionBox" id="location"> 
-            LOCATED AT THE
-            <br>
-            <br>
-            MTT RESORT 
-            <img class="titleHeading" src="/resources/index/mtthotel.png" alt="noImage_mtt"> <img class="titleHeading" src="/resources/index/mtthall.png" alt="noImage_mtt"> <img class="titleHeading" src="/resources/index/mttin.png" alt="noImage_mtt">
+            <div class="squares">
+              <a class="links" href="pages/SDP/U5_Lab1_SDP.html">SDP</a>
+            </div>
+            <div class="squares">
+              <a class="links" href="pages/SDP/U5_Lab1_SDP.html">SDP</a>
+            </div>
+            <div class="squares">
+              <a class="links" href="pages/SDP/U5_Lab1_SDP.html">SDP</a>
+            </div>
+            <div class="squares">
+              <a class="links" href="pages/SDP/U5_Lab1_SDP.html">SDP</a>
+            </div>
           </div>
-        <div class="sectionBox">
-          <h2 class="sHeader"> CONTACT US </h2>  <!-- CSS This -->
-          <p id="dialSans"> Dial for Sans: 229-665-4245 </p>  <!-- CSS This -->
-          <p id="dialPapyrus"> Dial for Papyrus: 669-420-696 </p>  <!-- CSS This -->
-          <p id="dialMettaton"> Dial for Mettaton: 336-494-6276 </p>  <!-- CSS This -->
-          
-
         </div>
-        </div>
-
       </div>
+
+      <section id="encoderSection">
+        <h2>Encoder</h2>
+
+        <div class="encoder-row">
+          <label for="keyShift">Key Shift:</label>
+          <input id="keyShift" type="number" min="0" max="25" value="3" oninput="updateText()">
+        </div>
+
+        <div class="encoder-row">
+          <button onclick="toggleMode()" id="modeBtn">
+            Mode: Encode
+          </button>
+        </div>
+
+        <div class="encoder-row">
+          <label for="originalMsg">Original Message:</label>
+          <textarea id="originalMsg" rows="6" oninput="updateText()"></textarea>
+        </div>
+
+        <div class="encoder-row">
+          <label for="encodedMsg">Output:</label>
+          <textarea id="encodedMsg" rows="6" readonly></textarea>
+        </div>
+      </section>
+
     </div>
-   
-    
   </body>
 </html>
-  
-
-

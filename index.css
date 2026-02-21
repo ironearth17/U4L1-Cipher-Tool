@@ -1,12 +1,10 @@
-
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-  
 }
 
-body{
+body {
   margin: 0;
   background-color: black;
   color: white;
@@ -18,7 +16,7 @@ body{
   height: 100vh;
 }
 
-.page{
+.page {
   width: 90%;
   background-color: black;
   padding: 20px;
@@ -26,61 +24,91 @@ body{
   border: 4px solid white;
 }
 
-.link{
+.link {
   color: #4A96E1;
 }
 
-.titleBox{
-  text-align: center;
-  border: 2px solid #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #0a0015;
-}
-
-.titleHeading{
-  width: 200px;
+.squares {
+  width: 150px;
   height: 150px;
-}
-
-.naviBoard {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* need purple color format for the h1 and paragrpah in titlebox*/
-
-.mainBox{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.left{
-  flex: 1;
-}
-.right{
-  flex: 1;
-}
-
-.sectionBox{
   border: 2px solid white;
-  backlground-color: black;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+#inlineSquares {
+  display: flex;
+  
+}
+
+#holder1 {
+  display: flex;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px #796794;
 }
 
-.sHeader{
+#holder2 {
+  font-size: 20px;
+}
+
+#philo {
+  height: 100px;
+  width: 100px;
+}
+
+#encoderSection {
+  margin-top: 24px;
+  padding: 16px;
+  border: 2px solid #6F4CC3;
+  background: rgba(106, 90, 205, 0.06);
+}
+
+#encoderSection h2 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+}
+
+.encoder-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.encoder-row label {
+  margin-bottom: 6px;
+}
+
+#keyShift {
+  width: 80px;
+  padding: 6px;
+  font-family: 'Press Start 2P';
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 8px;
+  background: #0b0b0b;
   color: white;
-
+  border: 2px solid #4a3a7a;
+  font-family: 'Press Start 2P';
 }
 
-/* section box h2 and paragraph and the list in it */
+#modeBtn{
+  width: 30%;
+  background-color: #4a3a7a;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-family: 'Press Start 2P';
+}
 
+#modeBtn:hover {
+  background-color: #6f4cc3;
+}
 
-#crossedRed{
-  color: red;
-  text-decoration: line-through 2px red;
-
+#bunch{
+  display: flex;
+  
 }
